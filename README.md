@@ -34,7 +34,13 @@ A busca em profundidade DFS, é um algorítmo utilizado para percorrer ou buscar
   - Direção sul -> Direção Oeste -> Direção Norte -> Direção Leste.
 - Caso o algorítmo se encontre em uma posição em que todas os movimentos disponíveis são impossíveis, ele utiliza do auxílio da estrutura de `PILHA`, que funciona da seguinte forma:
   - A cada movimento, a posição atual de busca é armazenada na estrutura de pilha.
-  - Quando o algorítmo identificar o caso de `BECO SEM SAÍDA`, a estrutura irá remover a última posição armazenada e verificar se, a partir da nova posição do "topo" da pilha, é possível de se movimentar para alguma posição. A pilha funciona no sistema de LIFO (Last in First out), logo esse processo é repetido até ser possível de se realizar um movimento.
+  - Quando o algorítmo identificar o caso de `BECO SEM SAÍDA`, a estrutura irá remover a última posição armazenada e verificar se, a partir da nova posição do "topo" da pilha, é possível de se movimentar para alguma posição. A pilha funciona no sistema de LIFO (Last in First out), logo esse processo é repetido até ser possível de se realizar um movimento.<br>
+
+<div align="center"><img width="200px" src="imgs/profundidade1.jpeg" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/profundidade2.jpeg" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/profundidade3.jpeg" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/profundidade4.jpeg" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/profundidade5.jpeg" /> <br></div> 
  
 # Aleatorio
 O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade em sua execução ou tomada de decisões. Diferentemente dos algoritmos determinísticos, que produzem sempre o mesmo resultado para uma determinada entrada, os algoritmos randômicos introduzem incerteza ou imprevisibilidade em suas ações. Alem disso, nao e necessario uma estrutura de dados para conciliar seu funcionamento, uma vez que nao apresenta um padrao.
