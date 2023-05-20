@@ -7,9 +7,17 @@
 </div>
 
 # Problema Proposto
-<p align="justify">
- 
-</p>
+Este projeto apresenta objetivo de mostrar o processo de caminhamento por matrizes utilizando 3 tipos de algoritmos diferentes, em largura BFS, profundidade DFS e aleatorio.O caminhamento deve ocorrer em uma única matriz de tamanho N x N. Nesta haverá quatro tipos de elementos importantes espalhados aleatoriamente: <br>
+-item de passagem livre representado pelo numero `1`. <br>
+-item de dano, representado pelo carácter `*`. <br>
+-parade definidas como `#`. <br>
+-item de finalizacao, representado pelo caracter `?` que indica o ponto de parada da exploração. <br>
+Esses caracteres estarao posicionados de forma randômica na matriz em qualquer uma das posições tidas como válidas. Tem-se como regra a condição de dano, qual obriga o algoritmo a voltar no estágio inicial de execução e reiniciar novamente do zero toda a execução caso o caracter '*' seja atingido. Ao sofrer um dano o algoritmo deve demarcar a posição com o item 1, neutralizando o mesmo e abrindo novas possibilidades de rotas para caminhar até o estágio de finalização.<br>
+# Largura BFS
+
+# Profundidade DFS
+
+# Aleatorio
 
 # Lógica
 
