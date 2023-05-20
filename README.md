@@ -25,6 +25,7 @@ A busca em largura BFS, é um algoritmo utilizado para percorrer ou buscar em um
 <div align="center"><img width="200px" src="imgs/0 (11).png" /> <br></div> 
 <div align="center"><img width="200px" src="imgs/0 (12).png" /> <br></div> 
 <div align="center"><img width="200px" src="imgs/0 (13).png" /> <br></div> 
+
 # Profundidade DFS
 
 # Aleatorio
