@@ -19,7 +19,7 @@ A busca em largura BFS, é um algoritmo utilizado para percorrer ou buscar em um
 # Profundidade DFS
 
 # Aleatorio
-
+O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade em sua execução ou tomada de decisões. Diferentemente dos algoritmos determinísticos, que produzem sempre o mesmo resultado para uma determinada entrada, os algoritmos randômicos introduzem incerteza ou imprevisibilidade em suas ações. Alem disso, nao e necessario uma estrutura de dados para conciliar seu funcionamento, uma vez que nao apresenta um padrao.
 # Lógica
 
 # Resultados 
