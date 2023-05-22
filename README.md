@@ -61,6 +61,16 @@ O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade
 # Resultados 
    
 # Custo computacional 
+> Tomando como base uma mesma matriz de tamanho `50x50`, apresentada no arquivo `input.data`, foi feita uma análise dos três tipos de busca, mudando apenas a localização do objetivo `?`.
+Essa análise é feita a partir da média de tempo necessária para se encontrar a `?` entre três execuções do código. <br>
+
+### Objetivo na posição [49][49]
+
+<div align="center"><img width="200px" src="imgs/primeira_matriz.jpeg" /> <br></div> 
+
+- A busca em profundidade demorou, em média, 0.00035233 segundos para encontrar a `?`.
+- A busca em largura demorou, em média, 0.1863797 segundos para encontrar a `?`.
+- A busca randômica demorou, em média, 35.3264 segundos para encontrar a `?`. 
 
 # Conclusão 
 
