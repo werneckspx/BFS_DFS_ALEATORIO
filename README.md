@@ -80,6 +80,13 @@ Essa análise é feita a partir da média de tempo necessária para se encontrar
 - A busca em largura demorou, em média, 0.309981 segundos para encontrar a `?`.
 - A busca randômica demorou, em média, 0.007562 segundos para encontrar a `?`. 
 
+### Objetivo na posição [0][49]
+
+<div align="center"><img width="200px" src="imgs/segunda_matriz.jpeg" /> <br></div> 
+
+- A busca em profundidade demorou, em média, 0.029897 segundos para encontrar a `?`.
+- A busca em largura demorou, em média, 0.000422 segundos para encontrar a `?`.
+- A busca randômica demorou, em média, 5.344833 segundos para encontrar a `?`. 
 # Conclusão 
 
 # Bibliotecas 
