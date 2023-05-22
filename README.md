@@ -82,7 +82,7 @@ Essa análise é feita a partir da média de tempo necessária para se encontrar
 
 ### Objetivo na posição [0][49]
 
-<div align="center"><img width="200px" src="imgs/segunda_matriz.jpeg" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/terceira_matriz.jpeg" /> <br></div> 
 
 - A busca em profundidade demorou, em média, 0.029897 segundos para encontrar a `?`.
 - A busca em largura demorou, em média, 0.000422 segundos para encontrar a `?`.
