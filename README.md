@@ -59,6 +59,11 @@ O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade
 # Lógica
 
 # Resultados 
+Considerando a logica e a descricao do problema descrito acima, os resultados esperados durante a leitura do arquivo com uma matriz 50x50: <br>
+<div align="center"><img width="200px" src="imgs/profundidade3.jpeg" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/profundidade4.jpeg" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/profundidade5.jpeg" /> <br></div> 
+Todas as matrizes apresentam o numero de casas percorridas, e o tempo gasto para encontrar a posicao que apresenta o caracter `?`.
    
 # Custo computacional 
 > Tomando como base uma mesma matriz de tamanho `50x50`, apresentada no arquivo `input.data`, foi feita uma análise dos três tipos de busca, mudando apenas a localização do objetivo `?`.
