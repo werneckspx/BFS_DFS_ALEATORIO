@@ -55,7 +55,10 @@ A busca em profundidade DFS, é um algorítmo utilizado para percorrer ou buscar
 <div align="center"><img width="200px" src="imgs/profundidade5.jpeg" /> <br></div> 
  
 # Aleatorio
-O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade em sua execução ou tomada de decisões. Diferentemente dos algoritmos determinísticos, que produzem sempre o mesmo resultado para uma determinada entrada, os algoritmos randômicos introduzem incerteza ou imprevisibilidade em suas ações. Alem disso, nao e necessario uma estrutura de dados para conciliar seu funcionamento, uma vez que nao apresenta um padrao.
+O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade em sua execução ou tomada de decisões. Diferentemente dos algoritmos determinísticos, que produzem sempre o mesmo resultado para uma determinada entrada, os algoritmos randômicos introduzem incerteza ou imprevisibilidade em suas ações. Além disso, não e necessária uma estrutura de dados para conciliar seu funcionamento, uma vez que não apresenta um padrão.
+- Iniciando no ponto [0][0], o algorítmo randômico pode andar uma posição por vez em qualquer direção.
+- Caso o algorítmo randomize um caminho em que todas as posições adjascentes à atual sejam impossíveis se serem percorridas (armazenem os caracteres `#`, `0` ou se localizarem em posições extremas da matriz), o próximo movimento será o retorno à posição [0][0] e, posteriormente, o início de um novo caminho de busca randômica.
+
 # Lógica
 
 # Resultados 
