@@ -59,12 +59,12 @@ O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade
 - Iniciando no ponto [0][0], o algorítmo randômico pode andar uma posição por vez em qualquer direção.
 - Caso o algorítmo randomize um caminho em que todas as posições adjascentes à atual sejam impossíveis se serem percorridas (armazenem os caracteres `#`, `0` ou se localizarem em posições extremas da matriz), o próximo movimento será o retorno à posição [0][0] e, posteriormente, o início de um novo caminho de busca randômica.
 
-<div align="center"><img width="200px" src="imgs/0(20).png" /> <br></div> 
-<div align="center"><img width="200px" src="imgs/0(21).png" /> <br></div> 
-<div align="center"><img width="200px" src="imgs/0(22).png" /> <br></div> 
-<div align="center"><img width="200px" src="imgs/0(23).png" /> <br></div> 
-<div align="center"><img width="200px" src="imgs/0(24).png" /> <br></div> 
-<div align="center"><img width="200px" src="imgs/0(20).png" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/0 (20).png" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/0 (21).png" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/0 (22).png" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/0 (23).png" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/0 (24).png" /> <br></div> 
+<div align="center"><img width="200px" src="imgs/0 (20).png" /> <br></div> 
 
 # Lógica
 > As lógicas de execução de cada forma de busca serão representadas e explicadas através da exibição das linhas que contém cada função do código em c++.
