@@ -74,6 +74,19 @@ Então, por meio de um `if` após o loop de leitura, no caso onde o input do pro
 ### Largura
 ### Profundidade
 O arquivo `profundidade.cpp` trabalha com as funções criadas no arquivo `profundidade.hpp`. As funções `read2()` e `print()` são funções "padrão" para todos os tipos de busca, já as `profundidade()` e `beco_sem_saida()` são específicas para o DFS.
+- Inicialmente, a função `profundidade()` inclui a posição inicial [0][0] na pilha que armazena cada posição percorrida e substitui o caracter `1` da posição inicial pelo `0`. Depois inicia um loop do tipo `do while` até atingir o caracter `?` que representa o objetivo da busca.
+- Dentro do loop, uma variável do tipo `booleana` controla se a posição atual mudou ou não. (linha 108)
+- O processo de caminhamento funciona seguindo uma ordem de prioridade, representada por um `if` seguido de `else if´s`.
+  - 1ª prioridade: `Direção Sul` (linha 110)
+  - 2ª prioridade: `Direção Leste` (linha 146)
+  - 3ª prioridade: `Direção Norte` (linha 182)
+  - 4ª prioridade: `Direção Oeste` (linha 218)
+- Dentro de cada estrutura condicional, responsável pelo movimento, a nova posição atual é adicionada à `pilha`, as coordenadas `X` e `Y` são modificadas e o booleano `andou` passa a ser `true`, representando que o movimento foi concluído com sucesso. Além disso, existe uma condicional `if` dentro dessa estrutura, que verifica se a próxima posição acessada contém um caracter `*`, que representa o `perigo`. Caso esse seja o caso, a variável `casas_percorridas` é zerada, a posição que continha um perigo é modificada para `1`e a pilha é resetada.
+- Caso nenhum movimento seja possível, o penúltimo `if` dentro da estrutura `do while` é acionado (linha 254). Ele verifica se ainda não ouve caminhamento e se a função `beco_sem_saida()` retornou `true`, se for esse o caso, o algorítmo retorna à posição inicial e reinicia a busca. 
+- A função `beco_sem_saida()` (linha 284) funciona da seguinte forma:
+  - Ela verifica, dependendo da posição atual na matriz, se é possível a movimentação em alguma direção. Caso seja impossível essa movimentação, a posição atual se encontra em um beco sem saída e a função retornará `true`.
+- Por fim, a última estrutura condicional `if` (linha 263), verifica se a posição atual armazena o caracter `?`, se for esse o caso, o algorítmo finaliza sua execução, exibindo o tempo de busca e as casas percorridas. A variável string `comparacao`, responsável por interromper o `do while` passa a armazenar `?`, interrompendo a repetição e finalizando o código.
+
 ### Randômico
 
 # Resultados 
