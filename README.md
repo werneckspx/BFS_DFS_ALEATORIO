@@ -71,6 +71,7 @@ O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade
 
 ### Largura
 ### Profundidade
+O arquivo `profundidade.cpp` trabalha com as funções criadas no arquivo `profundidade.hpp`. As funções `read2()` e `print()` são funções "padrão" para todos os tipos de busca, já as `profundidade()` e `beco_sem_saida()` são específicas para o DFS.
 ### Randômico
 
 # Resultados 
