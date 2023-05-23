@@ -98,7 +98,7 @@ Todas as matrizes apresentam o numero de casas percorridas, e o tempo gasto para
    
 # Custo computacional 
 > Tomando como base uma mesma matriz de tamanho `50x50`, apresentada no arquivo `input.data`, foi feita uma análise dos três tipos de busca, mudando apenas a localização do objetivo `?`.
-Essa análise é feita a partir da média de tempo necessária para se encontrar a `?` entre três execuções do código. <br>
+Essa análise é feita a partir da média de tempo necessária para se encontrar a `?` entre sete execuções do código. <br>
 
 ### Objetivo na posição [49][49]
 
