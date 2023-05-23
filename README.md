@@ -60,6 +60,11 @@ O algoritmo randômico, é um algoritmo que incorpora elementos de aleatoriedade
 - Caso o algorítmo randomize um caminho em que todas as posições adjascentes à atual sejam impossíveis se serem percorridas (armazenem os caracteres `#`, `0` ou se localizarem em posições extremas da matriz), o próximo movimento será o retorno à posição [0][0] e, posteriormente, o início de um novo caminho de busca randômica.
 
 # Lógica
+> As lógicas de execução de cada forma de busca serão representadas e explicadas através da exibição das linhas que contém cada função do código em c++.
+
+### Largura
+### Profundidade
+### Randômico
 
 # Resultados 
 Considerando a logica e a descricao do problema descrito acima, os resultados esperados durante a leitura do arquivo com uma matriz 50x50: <br>
