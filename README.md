@@ -117,10 +117,11 @@ O arquivo `aleatorio.cpp` trabalha com as funções criadas no arquivo `aleatori
 
 # Resultados 
 Considerando a logica e a descricao do problema descrito acima, os resultados esperados durante a leitura do arquivo com uma matriz 50x50: <br>
-<div align="center"><img width="200px" src="imgs/profundidade3.jpeg" /> <br></div> 
-<div align="center"><img width="200px" src="imgs/profundidade4.jpeg" /> <br></div> 
-<div align="center"><img width="200px" src="imgs/profundidade5.jpeg" /> <br></div> 
-Todas as matrizes apresentam o numero de casas percorridas, e o tempo gasto para encontrar a posicao que apresenta o caracter `?`.
+<div align="center"><img width="300px" src="imgs/r1.jpeg" /> 
+<img width="300px" src="imgs/r2.jpeg" />
+<img width="300px" src="imgs/r3.jpeg" /> <br></div>
+
+Em cada caso de caminhamento e mostrado a matriz inicial, apresentam o numero de casas percorridas, e o tempo gasto para encontrar a posicao que apresenta o caracter `?`, e apos isso a matriz alterado pelo caminhamento.
    
 # Custo computacional 
 > Tomando como base uma mesma matriz de tamanho `50x50`, apresentada no arquivo `input.data`, foi feita uma análise dos três tipos de busca, mudando apenas a localização do objetivo `?`.
@@ -138,8 +139,8 @@ Essa análise é feita a partir da média de tempo necessária para se encontrar
 
 <div align="center"><img width="200px" src="imgs/segunda_matriz.jpeg" /> <br></div> 
 
-- A busca em profundidade demorou, em média, 0.001783 segundos para encontrar a `?`.
-- A busca em largura demorou, em média, 0.309981 segundos para encontrar a `?`.
+- A busca em profundidade demorou, em média, 0.309981 segundos para encontrar a `?`.
+- A busca em largura demorou, em média, 0.001783 segundos para encontrar a `?`.
 - A busca randômica demorou, em média, 0.007562 segundos para encontrar a `?`. 
 
 ### Objetivo na posição [0][49]
@@ -149,6 +150,10 @@ Essa análise é feita a partir da média de tempo necessária para se encontrar
 - A busca em profundidade demorou, em média, 0.029897 segundos para encontrar a `?`.
 - A busca em largura demorou, em média, 0.000422 segundos para encontrar a `?`.
 - A busca randômica demorou, em média, 5.344833 segundos para encontrar a `?`. 
+
+### Comparacao entre os caminhamentos
+
+Apartir dos testes realizados acima entre os caminhamentos BFS, DFS e aleatorio, e possivel concluir que cada um deles se destaca em certas situacoes, levando a analisar que os algoritmos apresentam diferentes resultados dependendo da entrada de dados. Com por exemplo, no caso onde a posicao final e [49][49] a busca em profundida apresenta melhor desempenho, no caso onde a posicao final e [1][4] a busca em largura apresenta melhor desempenho e o aleatorio apresenta um desempenho ainda melhor que o de profundidade, provando que o resultado varia frente a entrada. A busca em profundidade apresenta um bom desempenho em situacoes onde sua sequencia de movimento passa pelo ponto final, pois mesmo que a posicao final esteja muito proxima ela seguira seu caminho ate que nao seja possivel mais andar pra uma certa direcao. A busca em largura se discipa como se fosse uma onda, entao em casos que a posicao final esta mais proxima da posicao incial ela apresenta um bom desempenho, se a posicao final esta longe da posicao incial tende a demorar um tempo maior, ja que ela passa por todas as posicoes possiveis. A busca de forma aleatoria nao apresenta um padrao, mas tende-se a apresentar melhores resultados com a posicao final proxima da posicao incial, uma vez que sao necessarios menos movimentos para alcanca-la.
 # Conclusão 
 
 # Bibliotecas 
