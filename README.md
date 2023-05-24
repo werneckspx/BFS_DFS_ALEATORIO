@@ -88,6 +88,22 @@ O arquivo `profundidade.cpp` trabalha com as funções criadas no arquivo `profu
 - Por fim, a última estrutura condicional `if` (linha 263), verifica se a posição atual armazena o caracter `?`, se for esse o caso, o algorítmo finaliza sua execução, exibindo o tempo de busca e as casas percorridas. A variável string `comparacao`, responsável por interromper o `do while` passa a armazenar `?`, interrompendo a repetição e finalizando o código.
 
 ### Randômico
+O arquivo `aleatorio.cpp` trabalha com as funções criadas no arquivo `aleatorio.hpp`. As funções `read3()` e `print1()` são funções "padrão" para todos os tipos de busca, já as `randomico()` e `beco_sem_saida1()` são específicas para o algorítmo de busca aleatória.
+- Em primeiro lugar, a função `aleatorio()` inicializa as variáveis responsáveis pela orientação de movimentação na matriz (linhas 83 a 93). Em seguida, inicializa uma estrutura de repetição `do while` que será executada até a posição atual contiver o caracter `?` (linha 95). 
+- Dentro da estrutura de repetição, é randomizado um número de 1 a 8 (linha 96), cada número é responsável por uma direção de movimento.<br>
+  - `Norte 1` (linha 98)
+  - `Leste 2` (linha 138)       
+  - `Sul   3` (linha 178)       
+  - `Oeste 4` (linha 218)      
+  - `Nordeste 5` (linha 258)
+  - `Sudeste 6` (linha 299)
+  - `Sudoeste 7` (linha 340)
+  - `Noroeste 8` (linha 381)
+- Cada movimento é coordenado por uma estrutura condicionao `if`, e dentro dessas estruturas existem, basicamente, os mesmos comandos, mudando apenas a orientação de direção de busca.
+  - Inicialmente, é verificado se a posição atual da busca contém o caracter `?`, se for o caso, a repetição é interrompida, é exibido o tempo de busca, a quantidade de casas percorridas e a busca enfim alcança seu objetivo.
+  - Outra verificação é se a posição atual armazena o caracter `*`, que representa o perigo. Se for esse o caso, a contagem de casas percorridas é zerada, a posição passa a armazenar o caracter `1` e a busca é reiniciada.
+  - Por fim, caso nenhuma das últimas condições seja satisfeita, a busca avança uma posição e modifica o caracter `1` por `0`, representando uma posição já explorada.
+- A última condicional da estrutura `do while` de repetição verifica se a função booleana `beco_sem_saida1()` (linha 441) retornou `true`. Caso isso ocorra, a posição atual se encontra em um beco sem saída e não há movimentação alguma para ser feita. Então, a busca é reiniciada da posição inicial.
 
 # Resultados 
 Considerando a logica e a descricao do problema descrito acima, os resultados esperados durante a leitura do arquivo com uma matriz 50x50: <br>
