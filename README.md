@@ -117,9 +117,9 @@ O arquivo `aleatorio.cpp` trabalha com as funções criadas no arquivo `aleatori
 
 # Resultados 
 Considerando a logica e a descricao do problema descrito acima, os resultados esperados durante a leitura do arquivo com uma matriz 50x50: <br>
-<div align="center"><img width="300px" src="imgs/r1.jpeg" /> 
-<img width="300px" src="imgs/r2.jpeg" />
-<img width="300px" src="imgs/r3.jpeg" /> <br></div>
+<div align="center"><img width="330px" src="imgs/r1.jpeg" /> 
+<img width="330px" src="imgs/r2.jpeg" />
+<img width="330px" src="imgs/r3.jpeg" /> <br></div>
 
 Em cada caso de caminhamento e mostrado a matriz inicial, apresentam o numero de casas percorridas, e o tempo gasto para encontrar a posicao que apresenta o caracter `?`, e apos isso a matriz alterado pelo caminhamento.
    
