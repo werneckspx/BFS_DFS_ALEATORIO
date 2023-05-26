@@ -169,6 +169,8 @@ A partir dos testes realizados acima entre os caminhamentos BFS, DFS e aleatóri
 
 # Conclusão 
 
+Dado o objetivo de caminhar por uma matriz até o caracter `?` utilizando os métodos de caminhamento de profundidade, largura e aleatório, dá-se como concluído o objetivo através do algoritmo acima explicado. Todos os casos de exceção e de problemas descritos foram tratados de forma clara e objetiva. Os resultados apresentados, e valores apresentados condizem com o esperado, no qual foi analisado por meio dos testes. A lógica utilizada apresenta bom desempenho, mas abre espaço para aperfeiçoamento, podendo melhorar, em trabalhos futuros, o custo computacional analisado. 
+
 # Bibliotecas 
 <p>Para o funcionamento do programa, é necessário incluir as seguintes bibliotecas: 
 <ul>
