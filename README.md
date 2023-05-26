@@ -187,7 +187,7 @@ A partir dos testes realizados acima entre os caminhamentos BFS, DFS e aleatóri
 
 # Compilação e Execução
 
-Esse pequeno exemplo possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+Esse projeto possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
 
 | Comando                |  Função                                                                                           |                     
