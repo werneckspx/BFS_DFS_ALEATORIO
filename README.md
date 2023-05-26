@@ -72,16 +72,24 @@ A funcao `read()` e a principal função, ela é criada em todos os processos de
 Então, por meio de um `if` após o loop de leitura, no caso onde o input do programa tivesse dois `\n`, a variável booleana iria impedir a matriz de ser caminhada duas vezes, e no caso de apenas um `\n`, ela seria percorrida dentro do `if`, finalizando o percorrimento de todas as matrizes corretamente. Ao acabar de salvar a matriz, é chamada a função do processo de caminhamento que está sendo realizado, estes processos são explicados separadamente abaixo: <br>
 
 ### Largura
-O arquivo `largura.cpp` trabalha com as funcoes criadas no arquivo `largura.hpp`. As funcoes `read()` e `imprimindo()` sao funcoes "padrao" para todos os tipos de busca, ja as funcoes `movimento()` e `movimento_x_y()` sao especificas para o BFS.
-- Inicialmente, a funcao `movimento()` recebe como parametro a posicao inicial [0][0], a fila e as matrizes, que ja haviam sido criadas, valendo observar que a posicao incial ja foi adicionada a fila, apos isso inicia um loop ate que o caracter `?` nao seja a posicao atual.
-- Dentro do loop, ocorre o processo de verificar se o caracter `?` caso for o loop se encerra, ocorre a verificao se o caracter e `*` caso for o processo de reinicializacao e feito, este que ja foi explicado acima. Apos esta verificacao incical, comeca a verificacao de qual e a posicao atual, pois existem posicoes que caem em casos de excecao. Dentro de cada `if` ou `else if`, que sao as excessoes tratadas, e chamada a funcao `movimento_x_y()`. Antes de ser chamada e somado ou subtraido 1 da linha e coluna para passar a posicao de comparacao das casas vizinhas, a soma ou subtracao e feita de maneira a respeitar a condicao de movimento do BFS para que dentro da funcao ocorra a comparacao com caracteres da posicao vizinha que esta sendo analisada, apos finalizar a funcao e somado ou subtraido 1 da linha e coluna para voltar ao valor da posicao atual. 
-- A funcao `movimento_x_y()` e resposavel por verificar qual caracter esta na posicao vizinha e enfileirar a posicao quando necessario.
- - Se a posicao recebida como parametro for `#` nao e adicionada a fila.
- - Se nao, se a posicao for diferente de `X` e feita outra verificacao.
-   - Se a posicao e diferente de `?` e de `*` e de `0` (posicao que pela qual o algoritmo ja caminhou), a posicao olhada recebe `X` que siginifica que aquela posicao ja foi olhada e e adicionada a fila apartir da funcao `enfileira()`.
-   - Se for igual a `?` e se for igual a `*` a posicao tambem e adicionada a fila apartir da funcao `enfileira()`.
+O arquivo `largura.cpp` trabalha com as funções criadas no arquivo `largura.hpp`. As funções `read()` e `imprimindo()` são funções "padrão" para todos os tipos de busca, já as funções `movimento()` e `movimento_x_y()` são especificas para o BFS. 
 
-Apos realizar toda sequencia de `if` e `else ifs` o algoritmo chama a funcao `desenfileira()`, esta e responsavel por retirar da primeira posicao da fila a posicao da iteracao atual, da qual ja foram salvos a fila todas as posicoes vizinhas a serem verificadas posteriormente. 
+- Inicialmente, a função `movimento()` recebe como parâmetro a posição inicial [0][0], a fila e as matrizes, que já haviam sido criadas, valendo observar que a posição inicial já foi adicionada a fila, após isso inicia um loop até que o caracter `?` não seja a posição atual. 
+
+- Dentro do loop, ocorre o processo de verificar se o caracter `?` caso for o loop se encerra, ocorre a verificação se o caracter e `*` caso for o processo de reinicialização e feito, este que já foi explicado acima. Após está verificação inicial, começa a verificação de qual e a posição atual, pois existem posições que caem em casos de exceção. Dentro de cada `if` ou `else if`, que são as exceções tratadas, e chamada a função `movimento_x_y()`. Antes de ser chamada e somado ou subtraído 1 da linha e coluna para passar a posição de comparação das casas vizinhas, a soma ou subtração e feita de maneira a respeitar a condição de movimento do BFS para que dentro da função ocorra a comparação com caracteres da posição vizinha que está sendo analisada, após finalizar a função e somado ou subtraído 1 da linha e coluna para voltar ao valor da posição atual.  
+- A função `movimento_x_y()` e responsável por verificar qual caracter está na posição vizinha e enfileirar a posição quando necessário. 
+
+   - Se a posição recebida como parâmetro for `#` não e adicionada a fila. 
+
+   - Se não, se a posição for diferente de `X` e feita outra verificação. 
+
+   - Se a posição e diferente de `?` e de `*` e de `0` (posição que pela qual o algoritmo já caminhou), a posição olhada recebe `X` que significa que aquela posição já foi olhada e e adicionada a fila a partir da função `enfileira()`. 
+
+   - Se for igual a `?` e se for igual a `*` a posição também e adicionada a fila a partir da função `enfileira()`. 
+
+  
+
+Após realizar toda sequência de `if` e `else ifs` o algoritmo chama a função `desenfileira()`, esta e responsável por retirar da primeira posição da fila a posição da iteração atual, da qual já foram salvos a fila todas as posições vizinhas a serem verificadas posteriormente. 
 ### Profundidade
 O arquivo `profundidade.cpp` trabalha com as funções criadas no arquivo `profundidade.hpp`. As funções `read2()` e `print()` são funções "padrão" para todos os tipos de busca, já as `profundidade()` e `beco_sem_saida()` são específicas para o DFS.
 - Inicialmente, a função `profundidade()` inclui a posição inicial [0][0] na pilha que armazena cada posição percorrida e substitui o caracter `1` da posição inicial pelo `0`. Depois inicia um loop do tipo `do while` até atingir o caracter `?` que representa o objetivo da busca.
@@ -151,9 +159,10 @@ Essa análise é feita a partir da média de tempo necessária para se encontrar
 - A busca em largura demorou, em média, 0.000422 segundos para encontrar a `?`.
 - A busca randômica demorou, em média, 5.344833 segundos para encontrar a `?`. 
 
-### Comparacao entre os caminhamentos
+### Comparação entre caminhamentos 
 
-Apartir dos testes realizados acima entre os caminhamentos BFS, DFS e aleatorio, e possivel concluir que cada um deles se destaca em certas situacoes, levando a analisar que os algoritmos apresentam diferentes resultados dependendo da entrada de dados. Com por exemplo, no caso onde a posicao final e [49][49] a busca em profundida apresenta melhor desempenho, no caso onde a posicao final e [1][4] a busca em largura apresenta melhor desempenho e o aleatorio apresenta um desempenho ainda melhor que o de profundidade, provando que o resultado varia frente a entrada. A busca em profundidade apresenta um bom desempenho em situacoes onde sua sequencia de movimento passa pelo ponto final, pois mesmo que a posicao final esteja muito proxima ela seguira seu caminho ate que nao seja possivel mais andar pra uma certa direcao. A busca em largura se discipa como se fosse uma onda, entao em casos que a posicao final esta mais proxima da posicao incial ela apresenta um bom desempenho, se a posicao final esta longe da posicao incial tende a demorar um tempo maior, ja que ela passa por todas as posicoes possiveis. A busca de forma aleatoria nao apresenta um padrao, mas tende-se a apresentar melhores resultados com a posicao final proxima da posicao incial, uma vez que sao necessarios menos movimentos para alcanca-la.
+A partir dos testes realizados acima entre os caminhamentos BFS, DFS e aleatório, e possível concluir que cada um deles se destaca em certas situações, levando a analisar que os algoritmos apresentam diferentes resultados dependendo da entrada de dados. Com por exemplo, no caso em que a posição final e [49][49] a busca em profundida apresenta melhor desempenho, no caso em que a posição final e [1][4] a busca em largura apresenta melhor desempenho e o aleatório apresenta um desempenho ainda melhor que o de profundidade, provando que o resultado varia frente à entrada. A busca em profundidade apresenta um bom desempenho em situações em que sua sequência de movimento passa pelo ponto final, pois mesmo que a posição final esteja muito próxima ela seguira seu caminho até que não seja possível mais andar pra uma certa direção. A busca em largura se dissipa como se fosse uma onda, então em casos que a posição final está mais próxima da posição inicial ela apresenta um bom desempenho, se a posição final está longe da posição inicial tende a demorar um tempo maior, já que ela passa por todas as posições possíveis. A busca de forma aleatória não apresenta um padrão, mas tende-se a apresentar melhores resultados com a posição final próxima da posição inicial, uma vez que são necessários menos movimentos para alcançá-la. 
+
 # Conclusão 
 
 # Bibliotecas 
