@@ -7,13 +7,17 @@
 </div>
 
 # Problema Proposto
-Este projeto apresenta objetivo de mostrar o processo de caminhamento por matrizes utilizando 3 tipos de algoritmos diferentes, em largura BFS, profundidade DFS e aleatorio. O caminhamento deve ocorrer em uma única matriz de tamanho N x N. Nesta haverá quatro tipos de elementos importantes espalhados aleatoriamente: <br>
-- item de passagem livre representado pelo numero `1`.
-- item de dano, representado pelo carácter `*`. 
-- parade definidas como `#`. 
-- item de finalizacao, representado pelo caracter `?` que indica o ponto de parada da exploração. 
+Este projeto apresenta objetivo de mostrar o processo de caminhamento por matrizes utilizando 3 tipos de algoritmos diferentes, em largura BFS, profundidade DFS e aleatório. O caminhamento deve ocorrer em uma única matriz de tamanho N x N. Nesta haverá quatro tipos de elementos importantes espalhados aleatoriamente: <br> 
 
-Esses caracteres estarao posicionados de forma randômica na matriz em qualquer uma das posições tidas como válidas. Tem-se como regra a condição de dano, qual obriga o algoritmo a voltar no estágio inicial de execução e reiniciar novamente do zero toda a execução caso o caracter `*` seja atingido. Ao sofrer um dano o algoritmo deve demarcar a posição com o item `1`, neutralizando o mesmo e abrindo novas possibilidades de rotas para caminhar até o estágio de finalização.<br>
+- Item de passagem livre representado pelo número `1`. 
+
+- Item de dano, representado pelo carácter `*`.  
+
+- Parade definidas como `#`.  
+
+- Item de finalização, representado pelo caracter `?` que indica o ponto de parada da exploração.  
+
+Esses caracteres estarão posicionados de forma randômica na matriz em qualquer uma das posições tidas como válidas. Tem-se como regra a condição de dano, qual obriga o algoritmo a voltar no estágio inicial de execução e reiniciar novamente do zero toda a execução caso o caracter `*` seja atingido. Ao sofrer um dano o algoritmo deve demarcar a posição com o item `1`, neutralizando o mesmo e abrindo novas possibilidades de rotas para caminhar até o estágio de finalização.<br> 
 
 # Observacoes
 > Durante esse projeto, imagens sao apresentadas, estas imagens seguem todas o mesmo padrao de cores, este padrao esta explicado abaixo. <br>
@@ -124,12 +128,12 @@ O arquivo `aleatorio.cpp` trabalha com as funções criadas no arquivo `aleatori
 - A última condicional da estrutura `do while` de repetição verifica se a função booleana `beco_sem_saida1()` (linha 441) retornou `true`. Caso isso ocorra, a posição atual se encontra em um beco sem saída e não há movimentação alguma para ser feita. Então, a busca é reiniciada da posição inicial.
 
 # Resultados 
-Considerando a logica e a descricao do problema descrito acima, os resultados esperados durante a leitura do arquivo com uma matriz 50x50: <br>
+Considerando a lógica e a descrição do problema descrito acima, os resultados esperados durante a leitura do arquivo com uma matriz 50x50:  <br>
 <div align="center"><img width="330px" src="imgs/r1.jpeg" /> 
 <img width="330px" src="imgs/r2.jpeg" />
 <img width="330px" src="imgs/r3.jpeg" /> <br></div>
 
-Em cada caso de caminhamento e mostrado a matriz inicial, apresentam o numero de casas percorridas, e o tempo gasto para encontrar a posicao que apresenta o caracter `?`, e apos isso a matriz alterado pelo caminhamento.
+Em cada caso de caminhamento e mostrado a matriz inicial, apresentam o número de casas percorridas, e o tempo gasto para encontrar a posição que apresenta o caracter `?`, e após isso a matriz alterada pelo caminhamento. 
    
 # Custo computacional 
 > Tomando como base uma mesma matriz de tamanho `50x50`, apresentada no arquivo `input.data`, foi feita uma análise dos três tipos de busca, mudando apenas a localização do objetivo `?`.
