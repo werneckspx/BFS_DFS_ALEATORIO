@@ -133,6 +133,7 @@ void movimento(vector<vector<string>> mat,vector<vector<string>> mat_guardar, in
                     mat[i][j]=mat_guardar[i][j];
                 }
             }
+            casasPercorridas=0;
         }
 
         if (mat[i][j]=="?")
@@ -141,7 +142,8 @@ void movimento(vector<vector<string>> mat,vector<vector<string>> mat_guardar, in
             chrono::steady_clock::time_point end= chrono::steady_clock::now();
             chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
             //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
-            cout << endl << endl << "=======================================================================================" << endl;
+            cout << endl << endl << endl << "======================================================================================" << endl;
+            cout << "CASAS PERCORRIDAS " << casasPercorridas;
             cout << endl << "A BUSCA POR LARGURA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
             cout << endl << "=======================================================================================" << endl << endl << endl;
             break;
@@ -365,7 +367,6 @@ void movimento(vector<vector<string>> mat,vector<vector<string>> mat_guardar, in
         //imprimindo(mat);
         
     }
-    cout<<"Casas percorridas: "<<casasPercorridas+1<<endl;
     imprimindo(mat);
     
 }

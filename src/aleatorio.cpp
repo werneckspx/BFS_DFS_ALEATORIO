@@ -101,7 +101,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             casas_percorridas ++;
             
             if (comparacao == "?") {
-                cout << endl << "============= ENCONTROU O '?' =============" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x-1][posicao.y] = "X";
                 achou = true;
                 //print1(mat);
@@ -109,9 +109,8 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }
@@ -141,7 +140,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             comparacao = mat[posicao.x][posicao.y+1];
 
             if (comparacao == "?") {
-                cout << endl << "========== ENCONTROU O '?' =========" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x][posicao.y+1] = "X";
                 achou = true;
                 ////print(mat);
@@ -149,9 +148,8 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }
@@ -181,7 +179,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             comparacao = mat[posicao.x+1][posicao.y];
 
             if (comparacao == "?") {
-                cout << endl << "=========== ENCONTROU O '?' ===========" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x+1][posicao.y] = "X";
                 achou = true;
                 ////print(mat);
@@ -189,9 +187,9 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
+                
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }
@@ -221,7 +219,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             comparacao = mat[posicao.x][posicao.y-1];
 
             if (comparacao == "?") {
-                cout << endl << "ENCONTROU O '?'" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x][posicao.y-1] = "X";
                 achou = true;
                 ////print(mat);
@@ -229,9 +227,8 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }
@@ -261,7 +258,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             comparacao = mat[posicao.x-1][posicao.y+1];
             
             if (comparacao == "?") {
-                cout << endl << "============= ENCONTROU O '?' =============" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x-1][posicao.y+1] = "X";
                 achou = true;
                 ////print(mat);
@@ -269,9 +266,8 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }
@@ -302,7 +298,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             comparacao = mat[posicao.x+1][posicao.y+1];
             
             if (comparacao == "?") {
-                cout << endl << "============= ENCONTROU O '?' =============" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x+1][posicao.y+1] = "X";
                 achou = true;
                 ////print(mat);
@@ -310,9 +306,9 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
+                
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }
@@ -343,7 +339,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             comparacao = mat[posicao.x+1][posicao.y-1];
             
             if (comparacao == "?") {
-                cout << endl << "============= ENCONTROU O '?' =============" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x+1][posicao.y-1] = "X";
                 achou = true;
                 ////print(mat);
@@ -351,9 +347,9 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
+                
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }
@@ -384,7 +380,7 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
             comparacao = mat[posicao.x-1][posicao.y-1];
             
             if (comparacao == "?") {
-                cout << endl << "============= ENCONTROU O '?' =============" << endl;
+                cout << endl << endl << endl << "======================================================================================" << endl;
                 mat[posicao.x-1][posicao.y-1] = "X";
                 achou = true;
                 ////print(mat);
@@ -392,9 +388,9 @@ void randomico(vector<vector<string>> mat, vector<vector<string>> mat_guardar) {
                 //double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
                 chrono::steady_clock::time_point end= chrono::steady_clock::now();
                 chrono::duration<double> elapsed_seconds = chrono::duration_cast<chrono::duration<double>>(end - begin);
-                cout << endl << endl << "=======================================================================================" << endl;
-                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
                 cout << "CASAS PERCORRIDAS: " << casas_percorridas;
+                cout << endl << "A BUSCA RANDÔMICA DEMOROU: " << elapsed_seconds.count() << " SEGUNDOS PARA ENCONTRAR A '?'" << endl;
+                
                 cout << endl << "=======================================================================================" << endl << endl << endl;
                 print1(mat);
             }

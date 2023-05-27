@@ -262,7 +262,6 @@ void profundidade(vector<vector<string>> mat, vector<vector<string>> mat_guardar
         }
         if (comparacao == "?") {
             cout << endl << endl << endl << "======================================================================================" << endl;
-            cout << endl << endl << "ENCONTREI A INTERROGAÇÃO NA POSIÇÃO [" << posicao.x << "][" << posicao.y << "]" << "!" << endl;
             cout << "CASAS PERCORRIDAS " << casas_percorridas;
             mat[posicao.x][posicao.y] = "X";
             //print(mat);

@@ -33,7 +33,7 @@ void PImprime(Pilha *p){
 
 	aux = p->top;
 	while(aux != p->base){
-		printf("%d\n", aux->data.x, aux->data.y);
+		printf("%d %d\n", aux->data.x, aux->data.y);
 		aux = aux->prox;
 	}
 
